@@ -1,0 +1,308 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --custom-blue: rgb(42, 67, 99);
+  --custom-gray: #333;
+}
+
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--custom-blue);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* En-tête */
+header {
+  background-color: var(--custom-gray);
+  padding: 1rem;
+  display: flex;
+}
+
+header img{
+  padding-bottom: 1rem;
+}
+
+#logo {
+  width: 7rem;
+}
+
+nav ul {
+  padding: 2rem;
+  background-color: var(--custom-gray);
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  background-color: var(--custom-gray);
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  background-color: var(--custom-gray);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  background-color: rgb(225, 224, 224);
+}
+
+/* Contenu principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.floquage-option {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flocage-select {
+  margin-bottom: 5px;
+}
+
+.initiales-container {
+  margin-top: 5px;
+}
+
+.initiales-input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.couleur-select,
+.taille-select,
+#flocage,
+#initiales {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--custom-blue);
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+  max-width: 200px;
+}
+
+.couleur-select option,
+.taille-select option,
+#flocage {
+  background-color: var(--custom-blue);
+}
+
+.produit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+/* Grilles (équipes, organigramme, produits) */
+.equipes-grid,
+.organigramme-grid,
+.produits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  margin: 2rem 0;
+}
+
+.equipe,
+.membre,
+.produit {
+  background-color: var(--custom-gray);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.equipe:hover,
+.membre:hover,
+.produit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.produit img {
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.produit h2 {
+  margin-bottom: 0.5rem;
+}
+
+.produit p {
+  margin-bottom: 1rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+}
+
+.img_salle img {
+  width: 25rem;
+}
+
+.img_salle {
+  display: flex;
+}
+
+/* Boutons */
+button {
+  background-color: var(--custom-blue);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem auto;
+  display: block;
+}
+
+button:hover {
+  background-color: rgb(52, 77, 109);
+}
+
+/* Page de contact */
+.contact-info {
+  background-color: var(--custom-gray);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.salle-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+
+/* Panier */
+#panier {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--custom-gray);
+  border-radius: 10px;
+}
+
+#liste-panier {
+  list-style-type: none;
+  padding: 0;
+}
+
+#liste-panier li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.retirer-du-panier {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 2px 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+.retirer-du-panier:hover {
+  background-color: #cc0000;
+}
+
+footer img {
+  width: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .equipes-grid,
+  .organigramme-grid,
+  .produits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .img_salle {
+    flex-direction: column;
+  }
+
+  .img_salle img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--custom-gray);
+}
+
+footer img {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+footer p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
