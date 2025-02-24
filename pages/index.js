@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Layout>
       <h1 className="text-4xl font-bold mb-6">Bienvenue au Club de Basket de Combourg</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="contact-info bg-custom-gray grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-2xl font-semibold mb-4">Qui sommes nous ?</h2>
           <p className="mb-4">
