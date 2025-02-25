@@ -4,10 +4,6 @@ import Image from "next/image"
 export default function Home() {
   return (
     <Layout>
-      <div>
-      <h1>Vérification des variables d'environnement</h1>
-      <p>Stripe Key: {process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "NON DÉFINIE"}</p>
-    </div>
       <h1 className="text-4xl font-bold mb-6">Bienvenue au Club de Basket de Combourg</h1>
       <div className="contact-info bg-custom-gray grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
