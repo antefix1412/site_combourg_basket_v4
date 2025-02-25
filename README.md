@@ -13,11 +13,11 @@ pnpm dev
 # or
 bun dev
 ```
-Combourg Basket web site 🏀
+## Combourg Basket web site 🏀
 
 Welcome to the repository of the Combourg Basket club website! This project aims to provide a modern and dynamic platform for the club, allowing users to follow news, teams, results, and much more.
 
-🚀 Features
+# 🚀 Features
 
 Display of club news and events 📅
 
@@ -29,13 +29,13 @@ Photo and video gallery 📸🎥
 
 Contact and practical information 📍
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 Frontend: HTML, CSS, JavaScript
 
 Frameworks/Libraries: React, Tailwind CSS
 
-📦 Installation
+# 📦 Installation
 
 Clone the project
 
@@ -56,7 +56,7 @@ Start the development server
 npm start
 ```
 
-🏗️ Contribution
+# 🏗️ Contribution
 
 Contributions are welcome! To propose an improvement:
 
@@ -70,10 +70,10 @@ Push your changes (git push origin feature/improvement) 🚀
 
 Open a Pull Request 📥
 
-📄 License
+# 📄 License
 
 This project is licensed under the MIT License. You are free to use and modify it as long as you comply with the terms of the license.
 
-📩 Contact
+# 📩 Contact
 
 For any questions or suggestions, feel free to contact us via the "Issues" tab in the repository
