@@ -39,16 +39,22 @@ Frameworks/Libraries: React, Tailwind CSS
 
 Clone the project
 
+```bash
 git clone https://github.com/antefix1412/site_combourg_basket_v4.git
 cd site_combourg_basket_v4
+```
 
 Install dependencies
 
+```bash
 npm install
+```
 
 Start the development server
 
+```bash
 npm start
+```
 
 🏗️ Contribution
 
