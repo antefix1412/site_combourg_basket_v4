@@ -20,17 +20,20 @@ Welcome to the repository of the Combourg Basket club website! This project aims
 ### 🚀 Features
 
 Display of club news and events 📅
-Management of teams and players 🏀
-Display of results and rankings 📊
-Photo and video gallery 📸🎥
-Contact and practical information 📍
 
+Management of teams and players 🏀
+
+Display of results and rankings 📊
+
+Photo and video gallery 📸🎥
+
+Contact and practical information 📍
 
 ### 🛠️ Technologies Used
 
 Frontend: HTML, CSS, JavaScript
-Frameworks/Libraries: React, Tailwind CSS
 
+Frameworks/Libraries: React, Tailwind CSS
 
 ### 📦 Installation
 
@@ -56,17 +59,20 @@ npm start
 ### 🏗️ Contribution
 
 Contributions are welcome! To propose an improvement:
-Fork the repository 🍴
-Create a branch (feature/improvement) 🌿
-Make your modifications and commit (git commit -m "Added a new feature") 📝
-Push your changes (git push origin feature/improvement) 🚀
-Open a Pull Request 📥
 
+Fork the repository 🍴
+
+Create a branch (feature/improvement) 🌿
+
+Make your modifications and commit (git commit -m "Added a new feature") 📝
+
+Push your changes (git push origin feature/improvement) 🚀
+
+Open a Pull Request 📥
 
 ### 📄 License
 
 This project is licensed under the MIT License. You are free to use and modify it as long as you comply with the terms of the license.
-
 
 ### 📩 Contact
 
