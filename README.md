@@ -13,61 +13,61 @@ pnpm dev
 # or
 bun dev
 ```
-Combourg Basket V4 🏀
+Combourg Basket web site 🏀
 
-Bienvenue sur le dépôt du site web du club de Combourg Basket ! Ce projet vise à fournir une plateforme moderne et dynamique pour le club, permettant de suivre les actualités, les équipes, les résultats et bien plus encore.
+Welcome to the repository of the Combourg Basket club website! This project aims to provide a modern and dynamic platform for the club, allowing users to follow news, teams, results, and much more.
 
-🚀 Fonctionnalités
+🚀 Features
 
-Affichage des actualités et événements du club 📅
+Display of club news and events 📅
 
-Gestion des équipes et des joueurs 🏀
+Management of teams and players 🏀
 
-Affichage des résultats et des classements 📊
+Display of results and rankings 📊
 
-Galerie photo et vidéos 📸🎥
+Photo and video gallery 📸🎥
 
-Contact et informations pratiques 📍
+Contact and practical information 📍
 
-🛠️ Technologies utilisées
+🛠️ Technologies Used
 
-Frontend : HTML, CSS, JavaScript
+Frontend: HTML, CSS, JavaScript
 
-Frameworks/Libraries : React, Tailwind CSS
+Frameworks/Libraries: React, Tailwind CSS
 
 📦 Installation
 
-Cloner le projet
+Clone the project
 
 git clone https://github.com/antefix1412/site_combourg_basket_v4.git
 cd site_combourg_basket_v4
 
-Installer les dépendances
+Install dependencies
 
 npm install
 
-Lancer le serveur de développement
+Start the development server
 
 npm start
 
 🏗️ Contribution
 
-Les contributions sont les bienvenues ! Pour proposer une amélioration :
+Contributions are welcome! To propose an improvement:
 
-Forkez le dépôt 🍴
+Fork the repository 🍴
 
-Créez une branche (feature/amélioration) 🌿
+Create a branch (feature/improvement) 🌿
 
-Faites vos modifications et committez (git commit -m "Ajout d'une nouvelle fonctionnalité") 📝
+Make your modifications and commit (git commit -m "Added a new feature") 📝
 
-Poussez vos changements (git push origin feature/amélioration) 🚀
+Push your changes (git push origin feature/improvement) 🚀
 
-Ouvrez une Pull Request 📥
+Open a Pull Request 📥
 
-📄 Licence
+📄 License
 
-Ce projet est sous licence MIT. Vous êtes libre de l'utiliser et de le modifier sous réserve de respecter les termes de la licence.
+This project is licensed under the MIT License. You are free to use and modify it as long as you comply with the terms of the license.
 
 📩 Contact
 
-Pour toute question ou suggestion, n'hésitez pas à nous contacter via l'onglet "Issues" du dépôt ou directement par email.
+For any questions or suggestions, feel free to contact us via the "Issues" tab in the repository
