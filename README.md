@@ -1,18 +1,5 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 # Combourg Basket web site 🏀
 
 Welcome to the repository of the Combourg Basket club website! This project aims to provide a modern and dynamic platform for the club, allowing users to follow news, teams, results, and much more.
@@ -53,8 +40,9 @@ npm install
 Start the development server
 
 ```bash
-npm start
+npm run dev
 ```
+And go to [http://localhost:3000/](http://localhost:3000/)
 
 ### 🏗️ Contribution
 
