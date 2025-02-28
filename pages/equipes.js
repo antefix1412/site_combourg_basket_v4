@@ -46,6 +46,7 @@ export default function Equipes() {
               alt={`Équipe ${team.name}`}
               width={250}
               height={200}
+              style={{ height: "auto" }}
               layout="responsive"
               className="rounded-lg"
             />
@@ -63,6 +64,7 @@ export default function Equipes() {
               alt={`Équipe ${team.name}`}
               width={250}
               height={200}
+              style={{ height: "auto" }}
               layout="responsive"
               className="rounded-lg"
             />

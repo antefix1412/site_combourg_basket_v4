@@ -27,6 +27,7 @@ export default function Contact() {
             alt="Intérieur de la salle"
             width={400}
             height={300}
+            style={{ height: "auto" }}
             layout="responsive"
             className="rounded-lg"
           />
@@ -35,6 +36,7 @@ export default function Contact() {
             alt="Extérieur de la salle"
             width={400}
             height={300}
+            style={{ height: "auto" }}
             layout="responsive"
             className="rounded-lg"
           />

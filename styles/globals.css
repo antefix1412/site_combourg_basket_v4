@@ -306,3 +306,85 @@ footer p {
   align-items: center;
 }
 
+/* Conteneur principal */
+.scrollWrapper {
+  width: 92vw; /* Utilise toute la largeur de l’écran */
+  width: 200%;
+  overflow: hidden;
+  position: relative;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+/* Conteneur des images */
+.scrollMenu {
+  display: flex;
+  white-space: nowrap;
+  width: max-content; /* S'assure que le menu s’étend au-delà de la largeur */
+  animation: scroll 20s linear infinite;
+}
+
+/* Éléments du menu */
+.menuItem {
+  flex: none;
+  padding: 10px;
+}
+
+/* Images */
+.image {
+  width: 200px; /* Ajuster selon les besoins */
+  height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Animation du défilement */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Défile jusqu'à la moitié pour enchaîner */
+  }
+}
+
+/* 🌍 **RESPONSIVE DESIGN** */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+  .image {
+    width: 250px; /* Images plus petites sur tablette */
+    height: 170px;
+  }  
+  .scrollWrapper {
+    width: 200%; /* Utiliser un peu moins d’espace sur tablette */
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .scrollWrapper {
+    width: 100%; /* Utiliser un peu moins d’espace sur tablette */
+  }
+
+  .image {
+    width: 200px; /* Images encore plus petites sur mobile */
+    height: 140px;
+  }
+  .scrollMenu {
+    animation: scroll 20s linear infinite; /* Accélérer le défilement sur mobile */
+  }
+}
+
+/* Petits écrans (téléphones étroits) */
+@media (max-width: 480px) {
+  .scrollWrapper {
+    width: 100%; /* Utiliser un peu moins d’espace sur tablette */
+  }
+
+  .image {
+    width: 150px; /* Réduire encore plus sur les très petits écrans */
+    height: 100px;
+  }
+}
+

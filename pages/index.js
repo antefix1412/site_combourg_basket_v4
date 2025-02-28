@@ -1,5 +1,7 @@
 import Layout from "../components/Layout"
 import Image from "next/image"
+import ScrollingMenu from "@/components/ScrollingMenu";
+import ImageSlider from "@/components/ImageSlider";
 
 export default function Home() {
   return (
@@ -21,16 +23,12 @@ export default function Home() {
           </ul>
         </div>
         <div>
-          <Image
-            src="/images/img_index.png"
-            alt="Équipe de basket"
-            width={500}
-            height={300}
-            layout="responsive"
-            className="rounded-lg"
-          />
-        </div>
+        <ImageSlider />
+        </div> 
+        <ScrollingMenu />       
       </div>
+        
+      
     </Layout>
   )
 }

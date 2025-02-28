@@ -31,6 +31,7 @@ export default function Organigramme() {
               alt={member.name}
               width={200}
               height={200}
+              style={{ height: "auto" }}
               className="rounded-full mb-4"
             />
             <h2 className="text-xl font-semibold">{member.name}</h2>
