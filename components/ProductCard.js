@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import ImageZoom from "@/components/ImageZoom";
 
 export default function ProductCard({ product, addToCart }) {
   const [color, setColor] = useState("")
@@ -23,14 +24,8 @@ export default function ProductCard({ product, addToCart }) {
 
   return (
     <div className="border p-4 rounded-lg bg-custom-gray">
-      <Image
-        src={product.image || "/placeholder.svg"}
-        alt={product.name}
-        width={200}
-        height={200}
-        layout="responsive"
-        className="rounded-lg"
-      />
+      <ImageZoom src={product.image} />
+
       <h3 className="text-xl font-semibold mt-2">{product.name}</h3>
       <p className="text-lg">Prix : {product.price}€</p>
       <select

@@ -1,5 +1,6 @@
 import Layout from "../components/Layout"
 import Image from "next/image"
+import ImageZoom from "@/components/ImageZoom";
 
 const members = [
   { name: "Nom du membre", role: "Poste", image: "/images/image.png" },

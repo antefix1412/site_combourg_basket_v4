@@ -1,5 +1,6 @@
 import Layout from "../components/Layout"
 import Image from "next/image"
+import ImageZoom from "@/components/ImageZoom";
 
 const teams = [
   { name: "SM1", image: "/images/img_index.png" },
@@ -41,15 +42,15 @@ export default function Equipes() {
         {teams.map((team, index) => (
           <div key={index} className="equipe" data-aos="flip-right" data-aos-offset="125">
             <h3 className="text-xl font-semibold mb-2">Équipe {team.name}</h3>
-            <Image
-              src={team.image || "/placeholder.svg"}
-              alt={`Équipe ${team.name}`}
-              width={250}
-              height={200}
-              style={{ height: "auto" }}
-              layout="responsive"
-              className="rounded-lg"
-            />
+            <ImageZoom 
+            src={team.image}
+            alt={`Équipe ${team.name}`}
+            width={250}
+            height={200}
+            style={{ height: "auto" }}
+            layout="responsive"
+            className="rounded-lg"
+          /> 
           </div>
         ))}
       </div>
@@ -59,17 +60,16 @@ export default function Equipes() {
         {femaleTeams.map((team, index) => (
           <div key={index} className="equipe" data-aos="flip-right" data-aos-offset="125">
             <h3 className="text-xl font-semibold mb-2">Équipe {team.name}</h3>
-            <Image
-              src={team.image || "/placeholder.svg"}
-              alt={`Équipe ${team.name}`}
-              width={250}
-              height={200}
-              style={{ height: "auto" }}
-              layout="responsive"
-              className="rounded-lg"
-            />
+            <ImageZoom 
+            src={team.image}
+            alt={`Équipe ${team.name}`}
+            width={250}
+            height={200}
+            style={{ height: "auto" }}
+            layout="responsive"
+            className="rounded-lg"/> 
           </div>
-        ))}
+        ))} 
       </div>
     </Layout>
   )
