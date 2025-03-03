@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image"; // Importation du composant optimisé de Next.js
+import ImageZoom from "@/components/ImageZoom";
 
 const images = [
   "/images/image.png",
@@ -37,6 +38,7 @@ const ImageSlider = () => {
             objectFit="cover" // S'assurer que l'image couvre tout l'espace sans être déformée
             priority={index === currentIndex} // Charger l'image active en priorité
           />
+          
         </div>
       ))}
     </div>
