@@ -24,7 +24,6 @@ export default function Home() {
             <li>🤝 Entraide</li>
             <li>🎖️ Respect</li>
           </ul>
-          <BouncingBasketball/>
         </div>
         
         
