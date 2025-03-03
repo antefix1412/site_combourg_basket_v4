@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
+import BouncingBasketball from "@/components/BouncingBasketball";
+
 
 const navigation = [
   { name: 'Accueil', href: '/' },
@@ -23,7 +25,7 @@ export default function Header() {
           <Image src="/images/logo.png" alt="Logo du club" width={112} height={50} style={{ height: "auto" }} />
         </Link>
         
-        <nav className="hidden md:block">
+        <nav className="hidden lg:block">
           <ul className="flex space-x-4">
             {navigation.map((item) => (
               <li key={item.name}>
@@ -35,7 +37,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        <div className="md:hidden ml-auto">
+        <div className="lg:hidden ml-auto">
           <button
             type="button"
             className="text-white"

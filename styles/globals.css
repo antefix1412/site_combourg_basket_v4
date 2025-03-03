@@ -118,6 +118,10 @@ h3 {
   color: white;
 }
 
+.text-a-mettre{
+  text-align: left;
+}
+
 /* Grilles (équipes, organigramme, produits) */
 .equipes-grid,
 .organigramme-grid,
@@ -258,33 +262,6 @@ footer img {
   width: 1rem;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .equipes-grid,
-  .organigramme-grid,
-  .produits-grid {
-    grid-template-columns: 1fr;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 0.5rem 0;
-  }
-
-  .img_salle {
-    flex-direction: column;
-  }
-
-  .img_salle img {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -327,7 +304,11 @@ footer p {
 /* Éléments du menu */
 .menuItem {
   flex: none;
-  padding: 10px;
+  padding: 1rem;
+}
+
+.menuItem:hover {
+  background-color: #555;
 }
 
 /* Images */
@@ -348,10 +329,13 @@ footer p {
   }
 }
 
-/* 🌍 **RESPONSIVE DESIGN** */
-
 /* Tablettes */
 @media (max-width: 1024px) {
+  header .container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+  }
   .image {
     width: 250px; /* Images plus petites sur tablette */
     height: 170px;
@@ -363,6 +347,12 @@ footer p {
 
 /* Mobiles */
 @media (max-width: 768px) {
+
+  header .container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+  }
   .scrollWrapper {
     width: 100%; /* Utiliser un peu moins d’espace sur tablette */
   }
@@ -378,6 +368,11 @@ footer p {
 
 /* Petits écrans (téléphones étroits) */
 @media (max-width: 480px) {
+  header .container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+  }
   .scrollWrapper {
     width: 100%; /* Utiliser un peu moins d’espace sur tablette */
   }
