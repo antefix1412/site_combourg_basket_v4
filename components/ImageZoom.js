@@ -16,7 +16,7 @@ export default function ImageZoom({ src }) {
         <Image
           src={src}
           alt="Produit"
-          width={200}
+          width={300}
           height={200}
           className="rounded-lg shadow-lg"
         />
