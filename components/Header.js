@@ -1,10 +1,9 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
-
 
 const navigation = [
   { name: 'Accueil', href: '/' },
@@ -16,44 +15,68 @@ const navigation = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  // Fonction pour détecter le scroll
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setScrolled(true)  // L'utilisateur a fait défiler plus de 50px
+    } else {
+      setScrolled(false)  // L'utilisateur est en haut de la page
+    }
+  }
+
+  useEffect(() => {
+    // Ajouter un événement pour détecter le scroll
+    window.addEventListener('scroll', handleScroll)
+
+    // Nettoyer l'événement au démontage du composant
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
-    <header className="bg-custom-gray py-4">
-      <div className="container mx-auto px-4 items-center md:justify-between">
-        <Link href="/" className="flex-shrink-0 mb-4 md:mb-0">
-          <Image src="/images/logo.png" alt="Logo du club" width={112} height={50} style={{ height: "auto" }} />
-        </Link>
-        
-        <nav className="hidden lg:block">
-          <ul className="flex space-x-4">
-            {navigation.map((item) => (
-              <li key={item.name}>
-                <Link href={item.href} className="text-white font-bold hover:bg-gray-200 hover:text-black px-2 py-1 rounded">
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+    <>
+      <header className="fixed top-0 left-0 w-full bg-custom-gray py-4 z-50 shadow-md">
+        <div className="container mx-auto px-4 items-center justify-between">
+          <Link href="/" className="flex-shrink-0">
+            <Image src="/images/logo.png" alt="Logo du club" width={150} height={65} style={{ height: "auto" }} />
+          </Link>
 
-        <div className="lg:hidden ml-auto">
-          <button
-            type="button"
-            className="text-white"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <Menu className="h-6 w-6" />
-          </button>
+          {/* Menu Desktop */}
+          <nav className="hidden lg:block">
+            <ul className="flex space-x-4">
+              {navigation.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="text-white font-bold hover:bg-gray-200 hover:text-black px-2 py-1 rounded">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Bouton menu mobile */}
+          <div className="lg:hidden">
+            <button type="button" className="text-white" onClick={() => setMobileMenuOpen(true)}>
+              <Menu className="h-6 w-6" />
+            </button>
+          </div>
         </div>
-      </div>
-      
+        
+      </header>
+
+      {/* Ajout d'un padding pour éviter que le contenu soit caché sous la navbar */}
+      <div className="h-64"></div>
+
       {/* Menu mobile */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-end">
           <div className="bg-custom-blue w-64 h-full p-6 shadow-md">
             <div className="flex justify-between items-center mb-6">
               <Link href="/">
-                <Image src="/images/logo.png" alt="Logo du club" width={112} height={50} style={{ height: "auto" }} className="mb-4 md:mb-0" />
+                <Image src="/images/logo.png" alt="Logo du club" width={112} height={50} style={{ height: "auto" }} className="mb-4" />
               </Link>
               <button onClick={() => setMobileMenuOpen(false)}>
                 <X className="h-6 w-6 text-white" />
@@ -71,6 +94,6 @@ export default function Header() {
           </div>
         </div>
       )}
-    </header>
+    </>
   )
 }
