@@ -28,6 +28,7 @@ export default function Success() {
         <p className="mb-4">Votre paiement a été traité avec succès.</p>
         <p>Un e-mail de confirmation vous sera envoyé prochainement.</p>
       </div>
+      
     </Layout>
   )
 }

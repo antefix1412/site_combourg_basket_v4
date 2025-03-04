@@ -16,7 +16,7 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000); // Change toutes les 5 secondes
+    }, 4000); // Change toutes les 5 secondes
 
     return () => clearInterval(interval); // Nettoyage à la fin
   }, []);
