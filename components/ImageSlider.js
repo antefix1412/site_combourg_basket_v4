@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image"; // Importation du composant optimisé de Next.js
-import ImageZoom from "@/components/ImageZoom";
 
 const images = [
   "/images/image.png",
