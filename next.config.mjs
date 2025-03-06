@@ -6,5 +6,20 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default {
+  async headers() {
+    return [
+      {
+        source: "/Footer.js", // Remplace par ton fichier
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
+  },
+};
+;
 
