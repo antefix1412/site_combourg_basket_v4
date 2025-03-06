@@ -1,5 +1,4 @@
-"use client";
-import React from "react";
+"use client"
 
 const images = [
   "/images/hyper_u.png",
@@ -8,7 +7,17 @@ const images = [
   "/images/macdo.png",
   "/images/maxivelo.png",
   "/images/orange_bleu.png",
-];
+]
+
+// Tableau d'URLs correspondant à chaque image
+const links = [
+  "https://www.magasins-u.com/hyperu",
+  "https://www.intermarche.com",
+  "https://www.lerepaire35.fr/",
+  "https://www.mcdonalds.fr",
+  "https://www.maxivelo.fr/",
+  "https://www.lorangebleue.fr",
+]
 
 const ScrollingMenu = () => {
   return (
@@ -16,18 +25,33 @@ const ScrollingMenu = () => {
       <div className="scrollMenu">
         {images.map((src, index) => (
           <div className="menuItem" key={index}>
-            <img src={src} alt={`Image ${index + 1}`} className="image" />
+            <a href={links[index]} target="_blank" rel="noopener noreferrer">
+              <img
+                src={src || "/placeholder.svg"}
+                alt={`Image ${index + 1}`}
+                className="image"
+                style={{ cursor: "pointer" }}
+              />
+            </a>
           </div>
         ))}
         {/* Duplique les images pour un effet de boucle infinie */}
         {images.map((src, index) => (
           <div className="menuItem" key={index + images.length}>
-            <img src={src} alt={`Image ${index + 1}`} className="image" />
+            <a href={links[index]} target="_blank" rel="noopener noreferrer">
+              <img
+                src={src || "/placeholder.svg"}
+                alt={`Image ${index + 1}`}
+                className="image"
+                style={{ cursor: "pointer" }}
+              />
+            </a>
           </div>
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ScrollingMenu;
+export default ScrollingMenu
+
