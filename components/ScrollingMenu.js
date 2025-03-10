@@ -7,6 +7,7 @@ const images = [
   "/images/macdo.png",
   "/images/maxivelo.png",
   "/images/orange_bleu.png",
+  "/images/chat_toque.jpeg",
 ]
 
 // Tableau d'URLs correspondant à chaque image
@@ -17,6 +18,7 @@ const links = [
   "https://www.mcdonalds.fr",
   "https://www.maxivelo.fr/",
   "https://www.lorangebleue.fr",
+  ,
 ]
 
 const ScrollingMenu = () => {

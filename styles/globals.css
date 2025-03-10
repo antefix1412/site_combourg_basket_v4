@@ -17,6 +17,12 @@ body {
   text-align: center;
 }
 
+body ::selection {
+  background-color: var(--custom-blue); /* Changer la couleur de fond */
+  color: white; /* Changer la couleur du texte */
+}
+
+
 /* En-tête */
 header {
   background-color: var(--custom-gray);
