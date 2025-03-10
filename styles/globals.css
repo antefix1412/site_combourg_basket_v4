@@ -18,10 +18,9 @@ body {
 }
 
 body ::selection {
-  background-color: var(--custom-blue); /* Changer la couleur de fond */
+  background-color: rgb(55, 75, 100); /* Changer la couleur de fond */
   color: white; /* Changer la couleur du texte */
 }
-
 
 /* En-tête */
 header {
@@ -31,7 +30,7 @@ header {
 }
 
 header img{
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 #logo {
