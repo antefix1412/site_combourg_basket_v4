@@ -30,7 +30,7 @@ export default function Home() {
         <ImageSlider />
         </div> 
 
-        <div className="text-center">
+        <div className="ailgn-center">
           <ImageCarousel />
 
           <ScrollingMenu /> 
