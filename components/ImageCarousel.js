@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ImageZoom from "./ImageZoom";
+import ImageSlider from "./ImageSlider";
 
 const images = [
   "/images/hyper_u.png",
@@ -23,6 +24,7 @@ export function ImageCarousel() {
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
+
 
   return (
     <div className="relative w-full max-w-xl mx-auto">

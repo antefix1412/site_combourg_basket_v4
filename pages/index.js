@@ -30,12 +30,17 @@ export default function Home() {
         <ImageSlider />
         </div> 
 
-        <div className="ailgn-center">
-          <ImageCarousel />
-
-          <ScrollingMenu /> 
+        <div>
+        <ImageCarousel />
+        
+        <ScrollingMenu /> 
         </div>
 
+        
+        
+        
+
+        
       </div>
 
     </Layout>

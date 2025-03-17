@@ -70,6 +70,11 @@ main {
   padding: 2rem;
 }
 
+main ImageCarousel {
+  text-align: center;
+  align-items: center;
+}
+
 .floquage-option {
   margin-top: 10px;
   margin-bottom: 10px;
