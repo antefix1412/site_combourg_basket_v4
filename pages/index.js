@@ -1,7 +1,7 @@
-import Layout from "../components/Layout"
+import Layout from "@/components/Layout"
 import ScrollingMenu from "@/components/ScrollingMenu";
 import ImageSlider from "@/components/ImageSlider";
-import planingFleche from "@/components/planingFleche";
+import ImageCarousel from "@/components/ImageCarousel";
 
 
 export default function Home() {
@@ -30,8 +30,8 @@ export default function Home() {
         <ImageSlider />
         </div> 
 
-        <div>
-          <planingFleche />
+        <div className="text-center">
+          <ImageCarousel />
 
           <ScrollingMenu /> 
         </div>
