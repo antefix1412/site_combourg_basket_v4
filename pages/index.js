@@ -1,7 +1,7 @@
 import Layout from "../components/Layout"
-import Image from "next/image"
 import ScrollingMenu from "@/components/ScrollingMenu";
 import ImageSlider from "@/components/ImageSlider";
+import planingFleche from "@/components/planingFleche";
 
 
 export default function Home() {
@@ -29,8 +29,13 @@ export default function Home() {
         <div>
         <ImageSlider />
         </div> 
-        
-        <ScrollingMenu />       
+
+        <div>
+          <planingFleche />
+
+          <ScrollingMenu /> 
+        </div>
+
       </div>
 
     </Layout>
