@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import ImageZoom from "./ImageZoom";
 
 const images = [
   "/images/hyper_u.png",
@@ -25,7 +26,7 @@ export function ImageCarousel() {
 
   return (
     <div className="relative w-full max-w-xl mx-auto">
-      <img
+      <ImageZoom
         src={images[currentIndex]}
         alt="carousel"
         className="w-full h-64 object-cover rounded-lg shadow-md"
