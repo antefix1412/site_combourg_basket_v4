@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 import Image from "next/image"; // Importation du composant optimisé de Next.js
 
 const images = [
-  "/images/image.png",
-  "/images/exterieur_salle.jpeg",
-  "/images/equipe_rond.jpg",
+  "/images/U18M3.jpeg",
+  "/images/SF1.JPG",
+  "/images/SM2.JPG",
   "/images/img_index.png",
+  "/images/U18M3.jpeg",
 ];
 
 const ImageSlider = () => {
