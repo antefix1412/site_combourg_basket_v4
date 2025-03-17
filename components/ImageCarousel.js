@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ImageZoom from "./ImageZoom";
-import ImageSlider from "./ImageSlider";
 
 const images = [
   "/images/hyper_u.png",
