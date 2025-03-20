@@ -9,6 +9,7 @@ const navigation = [
   { name: "Accueil", href: "/" },
   { name: "Photos d'équipes", href: "/equipes" },
   { name: "Organigramme", href: "/organigramme" },
+  { name: "Planing des entrainements", href: "/planing" },
   { name: "Contact", href: "/contact" },
   { name: "Boutique", href: "/boutique" },
 ]
