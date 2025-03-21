@@ -11,7 +11,7 @@ export default function Contact() {
           <strong>Email :</strong> lachateaubriandcombourgbasket@gmail.com
         </p>
         <p>
-          <strong>Téléphone :</strong> 06 37 22 12 60
+          <strong>Téléphone :</strong> 07 66 25 63 47
         </p>
         <p>
           <strong>Adresse :</strong> Avenue Waldmunchen, 35270 Combourg
