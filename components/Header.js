@@ -69,7 +69,7 @@ export default function Header() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className={`text-white font-bold hover:bg-gray-200 hover:text-black px-3 py-2 rounded transition-all duration-300 ${
+                    className={`text-white hover:bg-gray-200 hover:text-black px-3 py-2 rounded transition-all duration-300 ${
                       scrolled ? "text-lg" : "text-base"
                     }`}
                   >

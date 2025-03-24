@@ -56,7 +56,6 @@ nav ul li a {
   background-color: var(--custom-gray);
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 nav ul li:hover {
@@ -73,6 +72,10 @@ main {
 main ImageCarousel {
   text-align: center;
   align-items: center;
+}
+
+.Carrousel{
+  width: 200%;
 }
 
 .floquage-option {
@@ -296,7 +299,7 @@ footer p {
 /* Conteneur principal */
 .scrollWrapper {
   width: 92vw; /* Utilise toute la largeur de l’écran */
-  width: 200%;
+  width: 100%;
   overflow: hidden;
   position: relative;
   background-color: #333;
@@ -323,7 +326,7 @@ footer p {
 
 /* Images */
 .image {
-  width: 200px; /* Ajuster selon les besoins */
+  width: 200px; 
   height: 150px;
   object-fit: contain;
   border-radius: 8px;
@@ -351,7 +354,7 @@ footer p {
     height: 170px;
   }  
   .scrollWrapper {
-    width: 200%; /* Utiliser un peu moins d’espace sur tablette */
+    width: 100%; /* Utiliser un peu moins d’espace sur tablette */
   }
 }
 
@@ -367,12 +370,13 @@ footer p {
     width: 100%; /* Utiliser un peu moins d’espace sur tablette */
   }
 
+  .Carrousel{
+    width: 100%;
+  }
+
   .image {
     width: 200px; /* Images encore plus petites sur mobile */
     height: 140px;
-  }
-  .scrollMenu {
-    animation: scroll 20s linear infinite; /* Accélérer le défilement sur mobile */
   }
 }
 
@@ -384,7 +388,7 @@ footer p {
     justify-content: center;
   }
   .scrollWrapper {
-    width: 100%; /* Utiliser un peu moins d’espace sur tablette */
+    width: 100%; /* Utiliser un peu moins d’espace que sur tablette */
   }
 
   .image {

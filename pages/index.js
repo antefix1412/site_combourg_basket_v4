@@ -26,13 +26,11 @@ export default function Home() {
         </div>       
         
         <div>
-        <ImageSlider />
+          <ImageSlider />
         </div> 
 
-        <div>
-          <div className="flex justify-center border-2 border-red-500">
+        <div className="Carrousel">
           <ImageCarousel />
-          </div>
           <ScrollingMenu />
         </div>
 
