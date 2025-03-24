@@ -26,26 +26,28 @@ export function ImageCarousel() {
 
 
   return (
-    <div className="relative w-full max-w-xl mx-auto">
-      <ImageZoom
-        src={images[currentIndex]}
-        alt="carousel"
-        className="w-full h-64 object-cover rounded-lg shadow-md"
-      />
-      <button
-        onClick={prevImage}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-      >
-        <ChevronLeft size={16} />
-      </button>
-      <button
-        onClick={nextImage}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-      >
-        <ChevronRight size={16} />
-      </button>
+    <div className="w-full flex justify-center">
+      <div className="relative max-w-xl w-full">
+        <ImageZoom
+          src={images[currentIndex]}
+          alt="carousel"
+          className="w-full h-64 object-cover rounded-lg shadow-md"
+        />
+        <button
+          onClick={prevImage}
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        >
+          <ChevronLeft size={16} />
+        </button>
+        <button
+          onClick={nextImage}
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        >
+          <ChevronRight size={16} />
+        </button>
+      </div>
     </div>
-  );
+  );    
 }
 
 

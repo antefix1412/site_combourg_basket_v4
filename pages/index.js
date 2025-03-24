@@ -23,26 +23,20 @@ export default function Home() {
             <li>🤝 Entraide</li>
             <li>🎖️ Respect</li>
           </ul>
-        </div>
-        
+        </div>       
         
         <div>
         <ImageSlider />
         </div> 
 
         <div>
-        <ImageCarousel />
-        
-        <ScrollingMenu /> 
+          <div className="flex justify-center border-2 border-red-500">
+          <ImageCarousel />
+          </div>
+          <ScrollingMenu />
         </div>
 
-        
-        
-        
-
-        
       </div>
-
     </Layout>
   )
 }
