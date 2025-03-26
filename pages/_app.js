@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import "../styles/globals.css";
-import { Analytics } from "@vercel/analytics/react"
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
