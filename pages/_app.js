@@ -1,18 +1,29 @@
 import { useEffect, useState } from "react";
+import { Kurale } from "next/font/google";
 import Loader from "../components/Loader";
 import "../styles/globals.css";
+
+// Importer la police Kurale
+const kurale = Kurale({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-kurale", // Définit une variable CSS pour Tailwind
+});
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simule un chargement (ex: données async, délai...)
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Change 2000 par le temps de chargement réel
+    }, 2000); // Simulation d'un chargement
   }, []);
 
-  return loading ? <Loader /> : <Component {...pageProps} />;
+  return (
+    <div className={kurale.variable}>
+      {loading ? <Loader /> : <Component {...pageProps} />}
+    </div>
+  );
 }
 
 export default MyApp;

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-sans;
+}
+
 :root {
   --custom-blue: rgb(42, 67, 99);
   --custom-gray: #333;
@@ -9,7 +13,6 @@
 
 /* Styles généraux */
 body {
-  font-family: Arial, sans-serif;
   background-color: var(--custom-blue);
   color: white;
   margin: 0;

@@ -11,6 +11,9 @@ export default {
         'custom-blue': 'rgb(42,67,99)',
         'custom-gray': '#333',
       },
+      fontFamily: {
+        sans: "var(--font-kurale), sans-serif",
+      },
     },
   },
   plugins: [],
