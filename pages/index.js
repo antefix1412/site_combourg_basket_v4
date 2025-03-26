@@ -109,7 +109,7 @@ export default function Home() {
       {/* Section Galerie */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Galerie Photos</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Planing Des Matchs du Week-End</h2>
           <ImageCarousel />
         </div>
       </section>
