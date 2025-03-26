@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full bg-custom-gray z-50 shadow-md transition-all duration-500 ease-in-out ${scrolled ? "py-12" : "py-4"}`}
+        className={`fixed top-0 left-0 w-full bg-custom-gray z-50 shadow-md ease-in-out ${scrolled ? "py-12" : "py-4"}`}
       >
         <div className="container mx-auto px-4 relative">
           {/* Logo */}
@@ -60,18 +60,18 @@ export default function Header() {
 
           {/* Menu Desktop */}
           <nav
-            className={`hidden lg:block transition-all duration-500 ease-in-out ${
-              scrolled ? "absolute right-8 top-1/2 transform -translate-y-1/2 w-[calc(100%-300px)]" : "text-center mt-2"
-            }`}
+            className={
+              scrolled
+                ? "hidden lg:block absolute right-4 top-1/2 transform -translate-y-1/2 w-[calc(100%-180px)]"
+                : "hidden lg:block text-center mt-2"
+            }
           >
-            <ul className={`flex ${scrolled ? "justify-end" : "justify-center"} space-x-8`}>
+            <ul className={`flex ${scrolled ? "justify-end" : "justify-center"} space-x-6`}>
               {navigation.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className={`text-white hover:bg-gray-200 hover:text-black px-3 py-2 rounded transition-all duration-300 ${
-                      scrolled ? "text-lg" : "text-base"
-                    }`}
+                    className="text-white hover:bg-gray-200 hover:text-black px-2 py-1 rounded text-sm"
                   >
                     {item.name}
                   </Link>
@@ -81,11 +81,9 @@ export default function Header() {
           </nav>
 
           {/* Bouton menu mobile */}
-          <div
-            className={`lg:hidden absolute right-4 top-1/2 transform -translate-y-1/2 transition-all duration-500 ease-in-out`}
-          >
+          <div className="lg:hidden absolute right-4 top-1/2 transform -translate-y-1/2">
             <button type="button" className="text-white" onClick={() => setMobileMenuOpen(true)}>
-              <Menu className={`transition-all duration-300 ${scrolled ? "h-10 w-10" : "h-6 w-6"}`} />
+              <Menu className="h-6 w-6" />
             </button>
           </div>
         </div>
