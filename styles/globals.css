@@ -78,6 +78,10 @@ main ImageCarousel {
   width: 200%;
 }
 
+ul li{
+  justify-content: center;
+}
+
 .floquage-option {
   margin-top: 10px;
   margin-bottom: 10px;
