@@ -71,7 +71,7 @@ export default function Header() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-white hover:bg-gray-200 hover:text-black px-2 py-1 rounded text-sm"
+                    className="text-white hover:bg-gray-200 hover:text-black px-2 py-1 rounded text-base"
                   >
                     {item.name}
                   </Link>
