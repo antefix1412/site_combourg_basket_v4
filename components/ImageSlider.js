@@ -7,7 +7,6 @@ const images = [
   "/images/SF1.JPG",
   "/images/SM2.JPG",
   "/images/img_index.png",
-  "/images/U18M3.jpeg",
 ];
 
 const ImageSlider = () => {
