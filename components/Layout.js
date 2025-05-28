@@ -20,7 +20,6 @@ export default function Layout({ children, title = "Club de Basket Combourg" }) 
       <Head>
         <title>{title}</title>
         <meta name="description" content="Site officiel du Club de Basket de Combourg" />
-        <meta name="robots" content="index, follow"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col min-h-screen bg-custom-blue text-white">
