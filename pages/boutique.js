@@ -6,12 +6,9 @@ import Layout from "../components/Layout";
 import ProductCard from "../components/ProductCard";
 
 const products = [
-  { id: 1, name: "T-shirt coton - Classic", price: 25, image: "/images/image.png", category: "tshirt-coton" },
-  { id: 2, name: "T-shirt sport - Breathable", price: 28, image: "/images/image.png", category: "tshirt-sport" },
-  { id: 3, name: "Sweat capuche - Club", price: 45, image: "/images/image.png", category: "sweat-capuche" },
-  { id: 4, name: "Jogging - Training", price: 50, image: "/images/image.png", category: "jogging" },
-  { id: 5, name: "Débardeur coton", price: 20, image: "/images/image.png", category: "debardeur-coton" },
-  { id: 6, name: "Débardeur sport", price: 22, image: "/images/image.png", category: "debardeur-sport" },
+  { id: 1, name: "T-shirt", price: 50, image: "/images/image.png" },
+  { id: 2, name: "Polo", price: 1, image: "/images/image.png" },
+  { id: 3, name: "Pull", price: 80, image: "/images/image.png" },
 ];
 
 export default function Boutique() {
